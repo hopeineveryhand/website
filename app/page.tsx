@@ -4,6 +4,7 @@ import HeroSection from "@/components/hero-section"
 import AboutSection from "@/components/about-section"
 import TeamSection from "@/components/team-section"
 import SignupSection from "@/components/signup-section"
+import FAQSection from "@/components/faq-section"
 import Footer from "@/components/footer"
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
         <AboutSection />
         <TeamSection />
         <SignupSection />
+        <FAQSection />
       </main>
       <Footer />
     </div>
