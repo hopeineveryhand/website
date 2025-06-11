@@ -122,9 +122,14 @@ export default function TeamSection() {
 
   const unaffiliatedMembers = [
     {
-      name: "Luka",
+      name: "Luka Gladovic",
       role: "Master of Ceremonies",
       description: "Leading event hosting and maintaining competition flow",
+    },
+    {
+      name: "Garima Pal",
+      role: "Marketing Cordinator",
+      description: "Developing marketing strategies and managing social media presence",
     },
     {
       name: "Diana Wang-Martin",
