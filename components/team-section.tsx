@@ -30,6 +30,42 @@ export default function TeamSection() {
         },
       ],
     },
+        {
+      name: "Hope in Every Hand",
+      logo: "/images/clubs/hope-in-every-hand.png",
+      website: "https://www.instagram.com/hope_in_every_hand/",
+      email: "info@hopeineveryhand.org",
+      description: "Community-focused organization creating positive social impact",
+      color: "rainbow",
+      members: [
+        {
+          name: "Nivriti Jain",
+          role: "Operations & Outreach Lead",
+          website: "https://www.linkedin.com/in/nivriti-jain-077969315/",
+          description: "Building community partnerships and expanding reach",
+        },
+        {
+          name: "Devanshi Satapathy",
+          role: "Volunteer Coordination Lead",
+          description: "Managing volunteer recruitment and training programs",
+        },
+        {
+          name: "Rhea Addepalli",
+          role: "Social Media & Communications",
+          description: "Developing social media strategy and engagement",
+        },
+                {
+          name: "Anushka Bhati",
+          role: "Financial Director",
+          description: "Managing volunteer recruitment and training programs",
+        },
+        {
+          name: "Riva Siroya",
+          role: "Social Media & Communications",
+          description: "Developing social media strategy and engagement",
+        },
+      ],
+    },
     {
       name: "Youth Law Advocacy",
       logo: "/images/clubs/youth-law-advocacy.png",
@@ -39,47 +75,19 @@ export default function TeamSection() {
       color: "red",
       members: [
         {
-          name: "NAME LAST",
-          role: "Legal Track Director",
-          description: "Leading legal case development and professional coordination",
+          name: "Plaksha, Panwar",
+          role: "Operation, outreach, and Event Lead",
+          website: "https://www.linkedin.com/in/plaksha-panwar/",
+          description: "Managing event logistics and event operations",
         },
         {
-          name: "NAME LAST",
-          role: "Judge Coordination Specialist",
-          description: "Managing relationships with legal professionals and judges",
-        },
-        {
-          name: "NAME LAST",
-          role: "Legal Compliance Officer",
-          description: "Ensuring competition meets legal and ethical standards",
+          name: "Hiya, Mali",
+          role: "Marketing Co-ordinator",
+          website: "https://www.instagram.com/m.hiyaaa/",
+          description: " Helping to promote the event and increase partcipation, sponsors, and patners",
         },
       ],
-    },
-    {
-      name: "Hope in Every Hand",
-      logo: "/images/clubs/hope-in-every-hand.png",
-      website: "https://www.instagram.com/hope_in_every_hand/",
-      email: "info@hopeineveryhand.org",
-      description: "Community-focused organization creating positive social impact",
-      color: "rainbow",
-      members: [
-        {
-          name: "NAME LAST",
-          role: "Community Outreach Director",
-          description: "Building community partnerships and expanding reach",
-        },
-        {
-          name: "NAME LAST",
-          role: "Volunteer Coordination Lead",
-          description: "Managing volunteer recruitment and training programs",
-        },
-        {
-          name: "NAME LAST",
-          role: "Social Media & Communications",
-          description: "Developing social media strategy and engagement",
-        },
-      ],
-    },
+    }
     {
       name: "Liberation Scientifica",
       logo: "/images/clubs/liberation-scientifica.png",
@@ -94,9 +102,9 @@ export default function TeamSection() {
           description: "Overseeing scientific case development and STEM networking",
         },
         {
-          name: "NAME LAST",
-          role: "Technical Systems Coordinator",
-          description: "Managing competition technology and digital infrastructure",
+          name: "Lucas Pogoryelovskyy",
+          role: "Technology Cordinator and Education Lead",
+          description: "Managing technical infrastructure and educational resources",
         },
         {
           name: "NAME LAST",
