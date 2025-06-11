@@ -14,23 +14,33 @@ export default function TeamSection() {
       members: [
         {
           name: "Adil Mukhi",
-          role: "Technology & Operations Director",
+          role: "Technology, Operations & Grants Lead",
           website: "https://adilmukhi.vercel.app/",
           description: "Full-stack developer and operations specialist leading technical infrastructure",
         },
         {
-          name: "NAME LAST",
-          role: "Medical Track Coordinator",
-          description: "Overseeing medical case development and healthcare networking",
+          name: "Kishan Suhirthan",
+          role: "Venue & Logistics Lead",
+          description: "Managing venue coordination and day-of-event operations",
         },
         {
-          name: "NAME LAST",
-          role: "Venue & Logistics Manager",
-          description: "Managing venue coordination and day-of-event operations",
+          name: "Velan Mangai Sivakumar",
+          role: "Education Lead",
+          description: "Developing educational content and resources for participants",
+        },
+        {
+          name: "Arghya Vyas",
+          role: "Technology Cordinator",
+          description: "Overseeing technical aspects and ensuring smooth event execution",
+        },
+        {
+          name: "Andrew Wang",
+          role: "Operations & Outreach Cordinator",
+          description: "Coordinating outreach efforts and managing event logistics",
         },
       ],
     },
-        {
+    {
       name: "Hope in Every Hand",
       logo: "/images/clubs/hope-in-every-hand.png",
       website: "https://www.instagram.com/hope_in_every_hand/",
@@ -56,7 +66,7 @@ export default function TeamSection() {
         },
                 {
           name: "Anushka Bhati",
-          role: "Financial Director",
+          role: "Financial Lead",
           description: "Managing volunteer recruitment and training programs",
         },
         {
@@ -76,18 +86,18 @@ export default function TeamSection() {
       members: [
         {
           name: "Plaksha, Panwar",
-          role: "Operation, outreach, and Event Lead",
+          role: "Operation, Outreach, and Event Cordinator",
           website: "https://www.linkedin.com/in/plaksha-panwar/",
           description: "Managing event logistics and event operations",
         },
         {
           name: "Hiya, Mali",
-          role: "Marketing Co-ordinator",
+          role: "Marketing Cordinator",
           website: "https://www.instagram.com/m.hiyaaa/",
           description: " Helping to promote the event and increase partcipation, sponsors, and patners",
         },
       ],
-    }
+    },
     {
       name: "Liberation Scientifica",
       logo: "/images/clubs/liberation-scientifica.png",
@@ -97,19 +107,14 @@ export default function TeamSection() {
       color: "blue",
       members: [
         {
-          name: "NAME LAST",
-          role: "STEM Track Director",
+          name: "Joshua Fung",
+          role: "Marketing Lead",
           description: "Overseeing scientific case development and STEM networking",
         },
         {
           name: "Lucas Pogoryelovskyy",
-          role: "Technology Cordinator and Education Lead",
+          role: "Technology & Education Cordinator",
           description: "Managing technical infrastructure and educational resources",
-        },
-        {
-          name: "NAME LAST",
-          role: "Research & Innovation Lead",
-          description: "Developing cutting-edge case studies and challenges",
         },
       ],
     },
@@ -117,34 +122,14 @@ export default function TeamSection() {
 
   const unaffiliatedMembers = [
     {
-      name: "NAME LAST",
+      name: "Luka",
       role: "Master of Ceremonies",
       description: "Leading event hosting and maintaining competition flow",
     },
     {
-      name: "NAME LAST",
-      role: "Photography & Media Director",
-      description: "Capturing competition moments and visual storytelling",
-    },
-    {
-      name: "NAME LAST",
-      role: "Sponsorship & Partnerships",
-      description: "Building corporate relationships and securing funding",
-    },
-    {
-      name: "NAME LAST",
-      role: "Marketing & Brand Strategy",
-      description: "Developing brand identity and marketing campaigns",
-    },
-    {
-      name: "NAME LAST",
-      role: "Student Experience Coordinator",
-      description: "Ensuring exceptional participant experience",
-    },
-    {
-      name: "NAME LAST",
-      role: "Awards & Recognition Manager",
-      description: "Managing prize distribution and ceremonies",
+      name: "Diana Wang-Martin",
+      role: "Teacher Supervisor",
+      description: "Providing educational oversight and mentorship",
     },
   ]
 
