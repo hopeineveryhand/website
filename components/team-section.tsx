@@ -131,11 +131,6 @@ export default function TeamSection() {
       role: "Marketing Cordinator",
       description: "Developing marketing strategies and managing social media presence",
     },
-    {
-      name: "Diana Wang-Martin",
-      role: "Teacher Supervisor",
-      description: "Providing educational oversight and mentorship",
-    },
   ]
 
   const getColorClasses = (color: string) => {
