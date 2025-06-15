@@ -61,8 +61,8 @@ export default function LoadingAnimation() {
               <Image
                 src="/images/ex3-logo.png"
                 alt="EX3 Logo"
-                width={48}
-                height={36}
+                width={96}
+                height={72}
                 className="object-contain filter drop-shadow-lg"
               />
             </div>
@@ -88,7 +88,7 @@ export default function LoadingAnimation() {
               style={{ width: `${progress}%` }}
             ></div>
           </div>
-          <div className="text-right mt-2">
+          <div className="text-center mt-2">
             <span className="text-yellow-400 text-xs font-medium">{Math.round(progress)}%</span>
           </div>
         </div>

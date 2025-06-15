@@ -1,7 +1,8 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Trophy, Award, Medal, ExternalLink } from "lucide-react"
+import { Trophy, Award, Medal, Instagram } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function SponsorsSection() {
   return (
@@ -28,8 +29,13 @@ export default function SponsorsSection() {
           <div className="flex justify-center">
             <Card className="border-4 border-yellow-500 shadow-xl hover:shadow-2xl transition-shadow max-w-md">
               <CardHeader className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-lg flex items-center justify-center shadow-lg">
-                  <span className="text-white font-bold text-2xl">GS</span>
+                <div className="w-32 h-32 mx-auto mb-4 relative">
+                  <Image
+                    src="/images/sponsors/go-sponsorly-logo.png"
+                    alt="Go Sponsorly Logo"
+                    fill
+                    className="object-contain rounded-lg shadow-lg"
+                  />
                 </div>
                 <CardTitle className="text-xl text-gray-900">Go Sponsorly</CardTitle>
               </CardHeader>
@@ -42,13 +48,13 @@ export default function SponsorsSection() {
                   asChild
                 >
                   <a
-                    href="https://gosponsorly.com"
+                    href="https://www.instagram.com/gosponsorly/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center"
                   >
-                    Visit Website
-                    <ExternalLink className="w-4 h-4 ml-2" />
+                    <Instagram className="w-4 h-4 mr-2" />
+                    Follow on Instagram
                   </a>
                 </Button>
               </CardContent>
