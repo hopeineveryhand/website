@@ -31,7 +31,7 @@ export default function SponsorsSection() {
               <CardHeader className="text-center">
                 <div className="w-32 h-32 mx-auto mb-4 relative">
                   <Image
-                    src="/images/sponsors/go-sponsorly-logo.png"
+                    src="public\images\sponsors\go-sponsorly-logo.png"
                     alt="Go Sponsorly Logo"
                     fill
                     className="object-contain rounded-lg shadow-lg"
