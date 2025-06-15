@@ -30,12 +30,12 @@ export default function TeamSection() {
         },
         {
           name: "Arghya Vyas",
-          role: "Technology Cordinator",
+          role: "Technology Coordinator",
           description: "Overseeing technical aspects and ensuring smooth event execution",
         },
         {
           name: "Andrew Wang",
-          role: "Operations & Outreach Cordinator",
+          role: "Operations & Outreach Coordinator",
           description: "Coordinating outreach efforts and managing event logistics",
         },
       ],
@@ -64,10 +64,10 @@ export default function TeamSection() {
           role: "Social Media & Communications",
           description: "Developing social media strategy and engagement",
         },
-                {
+        {
           name: "Anushka Bhati",
           role: "Financial Lead",
-          description: "Managing volunteer recruitment and training programs",
+          description: "Managing financial operations and budget coordination",
         },
         {
           name: "Riva Siroya",
@@ -85,16 +85,16 @@ export default function TeamSection() {
       color: "red",
       members: [
         {
-          name: "Plaksha, Panwar",
-          role: "Operation, Outreach, and Event Cordinator",
+          name: "Plaksha Panwar",
+          role: "Operation, Outreach, and Event Coordinator",
           website: "https://www.linkedin.com/in/plaksha-panwar/",
           description: "Managing event logistics and event operations",
         },
         {
-          name: "Hiya, Mali",
-          role: "Marketing Cordinator",
+          name: "Hiya Mali",
+          role: "Marketing Coordinator",
           website: "https://www.instagram.com/m.hiyaaa/",
-          description: " Helping to promote the event and increase partcipation, sponsors, and patners",
+          description: "Helping to promote the event and increase participation, sponsors, and partners",
         },
       ],
     },
@@ -113,7 +113,7 @@ export default function TeamSection() {
         },
         {
           name: "Lucas Pogoryelovskyy",
-          role: "Technology & Education Cordinator",
+          role: "Technology & Education Coordinator",
           description: "Managing technical infrastructure and educational resources",
         },
       ],
@@ -128,7 +128,7 @@ export default function TeamSection() {
     },
     {
       name: "Garima Pal",
-      role: "Marketing Cordinator",
+      role: "Marketing Coordinator",
       description: "Developing marketing strategies and managing social media presence",
     },
   ]
@@ -149,11 +149,11 @@ export default function TeamSection() {
   }
 
   return (
-    <section id="team" className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-16">
+    <section id="team" className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 py-20">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-yellow-500 mb-4 font-playfair">Organizing Committee</h2>
-          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6">
+          <p className="text-lg text-gray-300 max-w-3xl mx-auto mb-6 leading-relaxed">
             EX<span className="text-red-600">3</span> represents collaboration between four innovative student
             organizations, creating an interdisciplinary platform for future leaders.
           </p>
@@ -163,7 +163,7 @@ export default function TeamSection() {
         {/* Partner Organizations */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-yellow-500 mb-8 text-center">Partner Organizations</h3>
-          <div className="grid lg:grid-cols-2 gap-6">
+          <div className="grid lg:grid-cols-2 gap-8">
             {clubs.map((club, index) => (
               <Card
                 key={index}
@@ -246,29 +246,31 @@ export default function TeamSection() {
           </div>
         </div>
 
-        {/* Unaffiliated Team Members */}
-        <div className="mb-12">
+        {/* Core Team Members - Optimized for 2 people */}
+        <div className="mb-16">
           <h3 className="text-2xl font-bold text-red-600 mb-8 text-center">Core Team Members</h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {unaffiliatedMembers.map((member, index) => (
-              <Card
-                key={index}
-                className="bg-gray-800/90 border-4 border-red-600 hover:border-red-500 shadow-xl hover:shadow-red-600/10 transition-all duration-300 group backdrop-blur-sm"
-              >
-                <CardContent className="p-4">
-                  <div className="text-center">
-                    <h4 className="text-white font-semibold text-lg mb-1">{member.name}</h4>
-                    <p className="text-red-400 text-sm font-medium mb-2">{member.role}</p>
-                    <p className="text-gray-400 text-sm leading-relaxed">{member.description}</p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+          <div className="flex justify-center">
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl w-full">
+              {unaffiliatedMembers.map((member, index) => (
+                <Card
+                  key={index}
+                  className="bg-gray-800/90 border-4 border-red-600 hover:border-red-500 shadow-xl hover:shadow-red-600/10 transition-all duration-300 group backdrop-blur-sm"
+                >
+                  <CardContent className="p-6">
+                    <div className="text-center">
+                      <h4 className="text-white font-semibold text-xl mb-2">{member.name}</h4>
+                      <p className="text-red-400 text-base font-medium mb-3">{member.role}</p>
+                      <p className="text-gray-400 text-sm leading-relaxed">{member.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Contact Information */}
-        <div className="text-center bg-gradient-to-r from-gray-800/90 to-gray-700/90 border-4 border-red-600 rounded-xl p-6 shadow-2xl backdrop-blur-sm">
+        <div className="text-center bg-gradient-to-r from-gray-800/90 to-gray-700/90 border-4 border-red-600 rounded-xl p-8 shadow-2xl backdrop-blur-sm">
           <h3 className="text-2xl font-bold text-red-600 mb-4">Connect With Our Team</h3>
           <div className="flex flex-col items-center space-y-2 text-yellow-500 mb-4">
             <Mail className="w-6 h-6" />

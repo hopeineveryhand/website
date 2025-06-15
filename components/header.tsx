@@ -22,20 +22,26 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#about" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+              Home
+            </Link>
+            <Link href="/#about" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
               About
             </Link>
-            <Link href="#competition" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
-              Competition
+            <Link href="/gallery" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+              Gallery
             </Link>
-            <Link href="#team" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/sponsors" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+              Sponsors
+            </Link>
+            <Link href="/#team" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
               Team
             </Link>
             <Button
               asChild
               className="bg-red-600 hover:bg-red-700 text-white border-2 border-red-600 hover:border-red-700 font-bold px-6"
             >
-              <Link href="#signup">Sign Up</Link>
+              <Link href="/#signup">Register</Link>
             </Button>
           </nav>
 
@@ -50,21 +56,35 @@ export default function Header() {
           <nav className="md:hidden py-4 border-t border-yellow-500">
             <div className="flex flex-col space-y-4">
               <Link
-                href="#about"
+                href="/"
+                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="/#about"
                 className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
-                href="#competition"
+                href="/gallery"
                 className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Competition
+                Gallery
               </Link>
               <Link
-                href="#team"
+                href="/sponsors"
+                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Sponsors
+              </Link>
+              <Link
+                href="/#team"
                 className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
@@ -74,8 +94,8 @@ export default function Header() {
                 asChild
                 className="bg-red-600 hover:bg-red-700 text-white border-2 border-red-600 hover:border-red-700 font-bold w-fit"
               >
-                <Link href="#signup" onClick={() => setIsMenuOpen(false)}>
-                  Sign Up
+                <Link href="/#signup" onClick={() => setIsMenuOpen(false)}>
+                  Register
                 </Link>
               </Button>
             </div>

@@ -15,17 +15,17 @@ export default function FAQSection() {
     {
       question: "What is EX3 and what does it stand for?",
       answer:
-        "EX3 (Explore3) is the Greater Toronto Area's premier interdisciplinary case competition for high school students. The name represents our three competition tracks: Pre-Law, Pre-Medicine, and Pre-STEM. It's also an acronym for our methodology: Challenge, Analyze, Solve, Execute.",
+        "EX3 (Explore3) is the Greater Toronto Area's premier interdisciplinary case competition for high school students. The name represents our three competition tracks: Pre-Law, Pre-Medicine, and Pre-Engineering. It's also an acronym for our methodology: Challenge, Analyze, Solve, Execute.",
     },
     {
       question: "Who can participate in the competition?",
       answer:
-        "EX3 is open to all high school students aged 13-18 in the Greater Toronto Area. No prior case competition experience is required - we welcome students from all academic backgrounds who are passionate about law, medicine, or science.",
+        "EX3 is open to all high school students aged 13-18 in the Greater Toronto Area. No prior case competition experience is required - we welcome students from all academic backgrounds who are passionate about law, medicine, or engineering.",
     },
     {
       question: "How does the competition format work?",
       answer:
-        "The competition features three distinct tracks: Pre-Law (legal case analysis), Pre-Medicine (medical ethics and healthcare policy), and Pre-STEM (scientific innovation challenges). Participants compete in teams, analyze real-world case studies, and present solutions to expert judges.",
+        "The competition features three distinct tracks: Pre-Law (legal case analysis), Pre-Medicine (medical ethics and healthcare policy), and Pre-Engineering (engineering innovation challenges). Participants compete in teams, analyze real-world case studies, and present solutions to expert judges.",
     },
     {
       question: "What should I expect on competition day?",
@@ -45,12 +45,12 @@ export default function FAQSection() {
     {
       question: "How are the partner organizations involved?",
       answer:
-        "EX3 is a collaborative effort between Dr. Interested (medical focus), Youth Law Advocacy (legal focus), Hope in Every Hand (community service), and Liberation Scientifica (STEM focus). Each organization contributes expertise, resources, and mentorship in their respective fields.",
+        "EX3 is a collaborative effort between Dr. Interested (medical focus), Youth Law Advocacy (legal focus), Hope in Every Hand (community service), and Liberation Scientifica (engineering focus). Each organization contributes expertise, resources, and mentorship in their respective fields.",
     },
     {
       question: "What kind of cases will we be analyzing?",
       answer:
-        "Cases are designed to be challenging yet accessible, covering real-world scenarios in each track. Pre-Law cases might involve constitutional issues, Pre-Medicine cases could cover healthcare policy dilemmas, and Pre-STEM cases might focus on technological innovation challenges.",
+        "Cases are designed to be challenging yet accessible, covering real-world scenarios in each track. Pre-Law cases might involve constitutional issues, Pre-Medicine cases could cover healthcare policy dilemmas, and Pre-Engineering cases might focus on technological innovation challenges.",
     },
     {
       question: "Can I participate if I'm unsure about my career path?",
@@ -65,13 +65,13 @@ export default function FAQSection() {
   ]
 
   return (
-    <section className="bg-gray-100 py-20">
+    <section className="bg-gray-50 py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 font-playfair">
             Frequently Asked Questions
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             Everything you need to know about participating in EX3. Can't find what you're looking for?
             <a href="mailto:explorethreecomp@gmail.com" className="text-red-600 hover:text-red-700 font-semibold">
               {" "}
@@ -106,13 +106,13 @@ export default function FAQSection() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <div className="bg-gradient-to-r from-yellow-500 to-red-600 text-white rounded-lg p-6 max-w-2xl mx-auto">
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-yellow-500 to-red-600 text-white rounded-lg p-8 max-w-2xl mx-auto shadow-2xl">
             <h3 className="text-xl font-bold mb-2">Still have questions?</h3>
             <p className="mb-4">Our team is here to help! Reach out to us directly.</p>
             <a
               href="mailto:explorethreecomp@gmail.com"
-              className="inline-flex items-center bg-white text-red-600 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition-colors"
+              className="inline-flex items-center bg-white text-red-600 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors shadow-lg"
             >
               Contact Our Team
             </a>

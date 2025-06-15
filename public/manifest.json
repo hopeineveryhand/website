@@ -1,0 +1,21 @@
+{
+  "name": "EX3 Case Competition 2025",
+  "short_name": "EX3",
+  "description": "The Greater Toronto Area's premier interdisciplinary case competition for high school students",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1f2937",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "/images/ex3-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/ex3-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
