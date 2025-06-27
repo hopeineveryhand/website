@@ -119,7 +119,7 @@ export default function TeamSection() {
     {
       name: "Diana Wang-Martin",
       role: "Supervisor",
-      description: "Supervisor of the Explore Three Competition, TDSB educator with a passion for STEM education.",
+      description: "Supervisor of the Explore Three Competition, award winning TDSB educator with a passion for STEM education.",
     },
   ]
 
