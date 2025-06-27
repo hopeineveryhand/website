@@ -34,7 +34,7 @@ export default function TeamSection() {
           description: "Overseeing technical aspects and ensuring smooth event execution",
         },
         {
-          name: "Andrew Wang",
+          name: "Ali Salman",
           role: "Operations & Outreach Coordinator",
           description: "Coordinating outreach efforts and managing event logistics",
         },
@@ -111,25 +111,15 @@ export default function TeamSection() {
           role: "Marketing Lead",
           description: "Overseeing scientific case development and STEM networking",
         },
-        {
-          name: "Lucas Pogoryelovskyy",
-          role: "Technology & Education Coordinator",
-          description: "Managing technical infrastructure and educational resources",
-        },
       ],
     },
   ]
 
   const unaffiliatedMembers = [
     {
-      name: "Luka Gladovic",
-      role: "Master of Ceremonies",
-      description: "Leading event hosting and maintaining competition flow",
-    },
-    {
-      name: "Garima Pal",
-      role: "Marketing Coordinator",
-      description: "Developing marketing strategies and managing social media presence",
+      name: "Diana Wang-Martin",
+      role: "Supervisor",
+      description: "Supervisor of the Explore Three Competition, TDSB educator with a passion for STEM education.",
     },
   ]
 
