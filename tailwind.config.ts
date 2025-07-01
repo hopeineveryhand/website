@@ -57,10 +57,11 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // EX3 Brand Colors
-        "ex3-gold": "#fbbf24",
-        "ex3-red": "#dc2626",
-        "ex3-dark": "#1f2937",
+        // EX3 Brand Colors - Updated to match new logo
+        "ex3-navy": "#1e3a8a", // Navy blue from logo
+        "ex3-red": "#dc2626", // Keep the red
+        "ex3-white": "#ffffff", // Pure white
+        "ex3-dark": "#0f172a", // Darker navy for contrast
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -95,6 +96,10 @@ const config: Config = {
         float: "float 6s ease-in-out infinite",
         "pulse-glow": "pulse-glow 2s ease-in-out infinite",
       },
+      themeColor: [
+        { media: "(prefers-color-scheme: light)", color: "#1e3a8a" },
+        { media: "(prefers-color-scheme: dark)", color: "#1e3a8a" },
+      ],
     },
   },
   plugins: [require("tailwindcss-animate")],

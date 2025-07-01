@@ -53,7 +53,7 @@ export default function LoadingAnimation() {
         <div className="relative mb-12">
           <div className="w-32 h-32 mx-auto relative">
             {/* Outer rotating ring with golden glow */}
-            <div className="absolute inset-0 border-2 border-yellow-500 rounded-full animate-spin duration-3000 ease-linear opacity-80"></div>
+            <div className="absolute inset-0 border-2 border-blue-600 rounded-full animate-spin duration-3000 ease-linear opacity-80"></div>
             <div className="absolute inset-2 border border-red-600 rounded-full animate-pulse duration-2000"></div>
 
             {/* Inner prestigious container */}
@@ -74,7 +74,7 @@ export default function LoadingAnimation() {
 
         {/* Prestigious brand text */}
         <div className="mb-8">
-          <div className="text-yellow-500 text-3xl font-bold tracking-wider mb-2 font-playfair">
+          <div className="text-blue-600 text-3xl font-bold tracking-wider mb-2 font-playfair">
             EX<span className="text-red-600">3</span>
           </div>
           <div className="text-gray-300 text-sm font-medium tracking-widest uppercase">Case Competition</div>
@@ -84,12 +84,12 @@ export default function LoadingAnimation() {
         <div className="w-80 max-w-full mx-auto mb-6">
           <div className="h-1 bg-gray-700 rounded-full overflow-hidden shadow-inner">
             <div
-              className="h-full bg-gradient-to-r from-yellow-500 via-yellow-400 to-red-600 transition-all duration-300 ease-out rounded-full shadow-lg"
+              className="h-full bg-gradient-to-r from-blue-500 via-blue-400 to-red-600 transition-all duration-300 ease-out rounded-full shadow-lg"
               style={{ width: `${progress}%` }}
             ></div>
           </div>
           <div className="text-center mt-2">
-            <span className="text-yellow-400 text-xs font-medium">{Math.round(progress)}%</span>
+            <span className="text-blue-400 text-xs font-medium">{Math.round(progress)}%</span>
           </div>
         </div>
 

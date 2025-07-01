@@ -14,14 +14,15 @@ export default function TeamSection() {
       members: [
         {
           name: "Adil Mukhi",
-          role: "Technology, Operations & Grants Lead",
+          role: "Technology, Venue & Grants Lead",
           website: "https://adilmukhi.vercel.app/",
-          description: "Full-stack developer and operations specialist leading technical infrastructure",
+          description: "Full-stack developer and venue specialist leading technical infrastructure",
         },
         {
           name: "Kishan Suhirthan",
-          role: "Venue & Logistics Lead",
-          description: "Managing venue coordination and day-of-event operations",
+          role: "Operations & Logistics Lead",
+          website: "https://www.linkedin.com/in/kishansuhirthan/",
+          description: "Managing logistics coordination and day-of-event operations",
         },
         {
           name: "Velan Mangai Sivakumar",
@@ -31,11 +32,13 @@ export default function TeamSection() {
         {
           name: "Arghya Vyas",
           role: "Technology Coordinator",
+          website: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
           description: "Overseeing technical aspects and ensuring smooth event execution",
         },
         {
           name: "Ali Salman",
           role: "Operations & Outreach Coordinator",
+          website: "https://www.linkedin.com/in/ali-salman-569975294/",
           description: "Coordinating outreach efforts and managing event logistics",
         },
       ],

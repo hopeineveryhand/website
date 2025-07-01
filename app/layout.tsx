@@ -123,8 +123,8 @@ export const metadata: Metadata = {
     maximumScale: 5,
   },
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#dc2626" },
-    { media: "(prefers-color-scheme: dark)", color: "#fbbf24" },
+    { media: "(prefers-color-scheme: light)", color: "#1e3a8a" },
+    { media: "(prefers-color-scheme: dark)", color: "#1e3a8a" },
   ],
   category: "Education",
   classification: "Academic Competition",
@@ -140,7 +140,7 @@ export const metadata: Metadata = {
     "apple-mobile-web-app-status-bar-style": "default",
     "format-detection": "telephone=no",
   },
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 const jsonLd = {
@@ -263,8 +263,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/images/ex3-logo.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#dc2626" />
-        <meta name="msapplication-TileColor" content="#dc2626" />
+        <meta name="theme-color" content="#1e3a8a" />
+        <meta name="msapplication-TileColor" content="#1e3a8a" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />

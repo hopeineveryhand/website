@@ -21,7 +21,7 @@ export default function HeroSection() {
           <div className="text-center lg:text-left">
             {/* Main Title */}
             <h1 className="text-5xl lg:text-6xl font-bold mb-6 tracking-wider">
-              <span className="bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800 bg-clip-text text-transparent">
                 EX
               </span>
               <span className="text-red-600 drop-shadow-lg">3</span>
@@ -31,7 +31,7 @@ export default function HeroSection() {
             <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4 leading-tight">
               The GTA's Premier
               <br />
-              <span className="bg-gradient-to-r from-yellow-400 to-red-600 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-blue-600 to-red-600 bg-clip-text text-transparent">
                 Case Competition
               </span>
             </h2>
@@ -39,15 +39,16 @@ export default function HeroSection() {
             {/* Description */}
             <p className="text-lg text-gray-300 mb-6 leading-relaxed max-w-2xl">
               Where high school visionaries compete in interdisciplinary challenges across Law, Medicine, and Science.
-              Join 100+ students for a day of intellectual excellence and professional networking.
+              Join 100+ students for a day of intellectual excellence and professional networking.{" "}
+              <span className="font-semibold text-blue-400">Registration: $10</span>
             </p>
 
             {/* Action Words */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
               {["Challenge", "Analyze", "Solve", "Execute"].map((word, index) => (
                 <div key={word} className="flex items-center">
-                  <div className="w-2 h-2 bg-gradient-to-r from-yellow-500 to-red-600 rounded-full mr-2"></div>
-                  <span className="text-yellow-400 font-semibold text-lg tracking-wide">{word}</span>
+                  <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-red-600 rounded-full mr-2"></div>
+                  <span className="text-blue-400 font-semibold text-lg tracking-wide">{word}</span>
                 </div>
               ))}
             </div>
@@ -55,15 +56,15 @@ export default function HeroSection() {
             {/* Quick Stats */}
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-yellow-500">3</div>
+                <div className="text-2xl font-bold text-blue-500">3</div>
                 <div className="text-gray-400 text-sm">Tracks</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-red-600">100+</div>
+                <div className="text-2xl font-bold text-blue-600">100+</div>
                 <div className="text-gray-400 text-sm">Students</div>
               </div>
               <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-yellow-500">4</div>
+                <div className="text-2xl font-bold text-blue-500">4</div>
                 <div className="text-gray-400 text-sm">Partners</div>
               </div>
               <div className="text-center lg:text-left">
@@ -79,13 +80,15 @@ export default function HeroSection() {
                 size="lg"
                 className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white border-2 border-red-600 hover:border-red-700 font-bold px-8 py-4 text-lg w-full sm:w-auto shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
               >
-                <Link href="#signup">Register Now</Link>
+                <a href="https://forms.gle/cAaTsWKRrXFrt76T8" target="_blank" rel="noopener noreferrer">
+                  Register Now - $10
+                </a>
               </Button>
               <Button
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 font-bold px-8 py-4 text-lg w-full sm:w-auto shadow-lg hover:shadow-xl transition-all duration-300"
+                className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold px-8 py-4 text-lg w-full sm:w-auto shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
               >
                 <Link href="#about">Learn More</Link>
               </Button>
@@ -111,8 +114,8 @@ export default function HeroSection() {
 
             {/* Info Cards */}
             <div className="grid grid-cols-2 gap-4 w-full max-w-md">
-              <div className="bg-gray-800/80 border-2 border-yellow-500/50 rounded-lg p-4 text-center backdrop-blur-sm">
-                <Calendar className="w-6 h-6 text-yellow-500 mx-auto mb-2" />
+              <div className="bg-gray-800/80 border-2 border-blue-500/50 rounded-lg p-4 text-center backdrop-blur-sm">
+                <Calendar className="w-6 h-6 text-blue-500 mx-auto mb-2" />
                 <div className="text-white font-semibold text-sm">Summer 2025</div>
                 <div className="text-gray-400 text-xs">Full Day Event</div>
               </div>

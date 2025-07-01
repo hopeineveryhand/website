@@ -18,7 +18,7 @@ export default function AboutSection() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
           <Card className="border-4 border-gray-900 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader className="text-center">
-              <Trophy className="w-12 h-12 text-yellow-600 mx-auto mb-2" />
+              <Trophy className="w-12 h-12 text-blue-600 mx-auto mb-2" />
               <CardTitle className="text-gray-900">Competition</CardTitle>
             </CardHeader>
             <CardContent>
@@ -30,7 +30,7 @@ export default function AboutSection() {
 
           <Card className="border-4 border-gray-900 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader className="text-center">
-              <Users className="w-12 h-12 text-red-600 mx-auto mb-2" />
+              <Users className="w-12 h-12 text-blue-600 mx-auto mb-2" />
               <CardTitle className="text-gray-900">Networking</CardTitle>
             </CardHeader>
             <CardContent>
@@ -42,7 +42,7 @@ export default function AboutSection() {
 
           <Card className="border-4 border-gray-900 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader className="text-center">
-              <Calendar className="w-12 h-12 text-yellow-600 mx-auto mb-2" />
+              <Calendar className="w-12 h-12 text-blue-600 mx-auto mb-2" />
               <CardTitle className="text-gray-900">Full Day Event</CardTitle>
             </CardHeader>
             <CardContent>
@@ -54,7 +54,7 @@ export default function AboutSection() {
 
           <Card className="border-4 border-gray-900 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader className="text-center">
-              <MapPin className="w-12 h-12 text-red-600 mx-auto mb-2" />
+              <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-2" />
               <CardTitle className="text-gray-900">Prestigious Venue</CardTitle>
             </CardHeader>
             <CardContent>
@@ -65,23 +65,25 @@ export default function AboutSection() {
           </Card>
         </div>
 
-        <div className="bg-gray-900 border-4 border-yellow-500 rounded-lg p-8 shadow-2xl">
-          <h3 className="text-2xl font-bold text-yellow-500 mb-6 text-center">Competition Tracks</h3>
+        <div className="bg-gray-900 border-4 border-blue-600 rounded-lg p-8 shadow-2xl">
+          <h3 className="text-2xl font-bold text-blue-500 mb-6 text-center">Competition Tracks</h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-red-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-LAW</div>
+              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-LAW</div>
               <p className="text-gray-300 leading-relaxed">
                 Legal case analysis, argumentation, and constitutional law challenges.
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-yellow-500 text-gray-900 font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-MED</div>
+              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-MED</div>
               <p className="text-gray-300 leading-relaxed">
                 Medical ethics, healthcare policy, and clinical decision-making scenarios.
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-red-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-ENGINEERING</div>
+              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">
+                PRE-ENGINEERING
+              </div>
               <p className="text-gray-300 leading-relaxed">
                 Engineering innovation, technical solutions, and design challenges.
               </p>

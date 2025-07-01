@@ -10,31 +10,31 @@ export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-gray-900 border-b-4 border-yellow-500 sticky top-0 z-40">
+    <header className="bg-gray-900 border-b-4 border-blue-600 sticky top-0 z-40">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center space-x-3">
             <Image src="/images/ex3-logo.png" alt="EX3 Logo" width={60} height={40} className="object-contain" />
-            <div className="text-yellow-500 text-xl font-bold tracking-wider">
+            <div className="text-blue-600 text-xl font-bold tracking-wider">
               EX<span className="text-red-600">3</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="/" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               Home
             </Link>
-            <Link href="/#about" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/#about" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               About
             </Link>
-            <Link href="/gallery" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/gallery" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               Gallery
             </Link>
-            <Link href="/sponsors" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/sponsors" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               Sponsors
             </Link>
-            <Link href="/#team" className="text-yellow-500 hover:text-red-600 font-semibold transition-colors">
+            <Link href="/#team" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               Team
             </Link>
             <Button
@@ -46,7 +46,7 @@ export default function Header() {
           </nav>
 
           {/* Mobile Menu Button */}
-          <button className="md:hidden text-yellow-500 hover:text-red-600" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+          <button className="md:hidden text-blue-600 hover:text-red-600" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>
@@ -57,35 +57,35 @@ export default function Header() {
             <div className="flex flex-col space-y-4">
               <Link
                 href="/"
-                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                className="text-blue-600 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Home
               </Link>
               <Link
                 href="/#about"
-                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                className="text-blue-600 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
               </Link>
               <Link
                 href="/gallery"
-                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                className="text-blue-600 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Gallery
               </Link>
               <Link
                 href="/sponsors"
-                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                className="text-blue-600 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Sponsors
               </Link>
               <Link
                 href="/#team"
-                className="text-yellow-500 hover:text-red-600 font-semibold transition-colors"
+                className="text-blue-600 hover:text-red-600 font-semibold transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Team

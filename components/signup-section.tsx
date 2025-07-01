@@ -4,13 +4,8 @@ import type React from "react"
 
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
-import { Checkbox } from "@/components/ui/checkbox"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Calendar, Clock, MapPin, Trophy } from "lucide-react"
+import { Calendar, Clock, MapPin, Trophy, ExternalLink } from "lucide-react"
 
 export default function SignupSection() {
   const [formData, setFormData] = useState({
@@ -47,7 +42,8 @@ export default function SignupSection() {
             Register for EX<span className="text-red-600">3</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Secure your spot in the GTA's premier case competition. Limited spaces available!
+            Secure your spot in the GTA's premier case competition.{" "}
+            <span className="font-bold text-blue-600">$10 registration fee</span> - First come, first served!
           </p>
         </div>
 
@@ -106,187 +102,48 @@ export default function SignupSection() {
             </Card>
           </div>
 
-          {/* Registration Form */}
+          {/* Registration Link */}
           <Card className="border-4 border-red-600 shadow-lg">
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">Registration Form</CardTitle>
+              <CardTitle className="text-2xl text-gray-900">Quick Registration</CardTitle>
             </CardHeader>
-            <CardContent>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="firstName" className="text-gray-700 font-semibold">
-                      First Name *
-                    </Label>
-                    <Input
-                      id="firstName"
-                      value={formData.firstName}
-                      onChange={(e) => handleInputChange("firstName", e.target.value)}
-                      className="border-2 border-gray-300 focus:border-red-600"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="lastName" className="text-gray-700 font-semibold">
-                      Last Name *
-                    </Label>
-                    <Input
-                      id="lastName"
-                      value={formData.lastName}
-                      onChange={(e) => handleInputChange("lastName", e.target.value)}
-                      className="border-2 border-gray-300 focus:border-red-600"
-                      required
-                    />
-                  </div>
-                </div>
+            <CardContent className="text-center space-y-6">
+              <div className="bg-blue-50 border-2 border-blue-200 rounded-lg p-6">
+                <h3 className="text-xl font-bold text-blue-800 mb-2">Registration Fee: $10</h3>
+                <p className="text-blue-700 mb-4">First come, first served basis</p>
+                <p className="text-sm text-gray-600">Limited spots available for this exclusive competition</p>
+              </div>
 
-                <div>
-                  <Label htmlFor="email" className="text-gray-700 font-semibold">
-                    Email Address *
-                  </Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    value={formData.email}
-                    onChange={(e) => handleInputChange("email", e.target.value)}
-                    className="border-2 border-gray-300 focus:border-red-600"
-                    required
-                  />
-                </div>
-
-                <div className="grid md:grid-cols-2 gap-4">
-                  <div>
-                    <Label htmlFor="phone" className="text-gray-700 font-semibold">
-                      Phone Number *
-                    </Label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      value={formData.phone}
-                      onChange={(e) => handleInputChange("phone", e.target.value)}
-                      className="border-2 border-gray-300 focus:border-red-600"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <Label htmlFor="grade" className="text-gray-700 font-semibold">
-                      Grade *
-                    </Label>
-                    <Select onValueChange={(value) => handleInputChange("grade", value)}>
-                      <SelectTrigger className="border-2 border-gray-300 focus:border-red-600">
-                        <SelectValue placeholder="Select grade" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="9">Grade 9</SelectItem>
-                        <SelectItem value="10">Grade 10</SelectItem>
-                        <SelectItem value="11">Grade 11</SelectItem>
-                        <SelectItem value="12">Grade 12</SelectItem>
-                      </SelectContent>
-                    </Select>
-                  </div>
-                </div>
-
-                <div>
-                  <Label htmlFor="school" className="text-gray-700 font-semibold">
-                    School Name *
-                  </Label>
-                  <Input
-                    id="school"
-                    value={formData.school}
-                    onChange={(e) => handleInputChange("school", e.target.value)}
-                    className="border-2 border-gray-300 focus:border-red-600"
-                    required
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="track" className="text-gray-700 font-semibold">
-                    Competition Track *
-                  </Label>
-                  <Select onValueChange={(value) => handleInputChange("track", value)}>
-                    <SelectTrigger className="border-2 border-gray-300 focus:border-red-600">
-                      <SelectValue placeholder="Select your track" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="prelaw">Pre-Law</SelectItem>
-                      <SelectItem value="premed">Pre-Medicine</SelectItem>
-                      <SelectItem value="prestem">Pre-STEM</SelectItem>
-                    </SelectContent>
-                  </Select>
-                </div>
-
-                <div>
-                  <Label htmlFor="experience" className="text-gray-700 font-semibold">
-                    Relevant Experience (Optional)
-                  </Label>
-                  <Textarea
-                    id="experience"
-                    value={formData.experience}
-                    onChange={(e) => handleInputChange("experience", e.target.value)}
-                    className="border-2 border-gray-300 focus:border-red-600"
-                    placeholder="Tell us about any relevant experience in your chosen track..."
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="dietary" className="text-gray-700 font-semibold">
-                    Dietary Restrictions
-                  </Label>
-                  <Input
-                    id="dietary"
-                    value={formData.dietary}
-                    onChange={(e) => handleInputChange("dietary", e.target.value)}
-                    className="border-2 border-gray-300 focus:border-red-600"
-                    placeholder="Any dietary restrictions or allergies?"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="emergency" className="text-gray-700 font-semibold">
-                    Emergency Contact *
-                  </Label>
-                  <Input
-                    id="emergency"
-                    value={formData.emergency}
-                    onChange={(e) => handleInputChange("emergency", e.target.value)}
-                    className="border-2 border-gray-300 focus:border-red-600"
-                    placeholder="Name and phone number"
-                    required
-                  />
-                </div>
-
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-2">
-                    <Checkbox
-                      id="media"
-                      checked={formData.mediaConsent}
-                      onCheckedChange={(checked) => handleInputChange("mediaConsent", checked as boolean)}
-                    />
-                    <Label htmlFor="media" className="text-sm text-gray-700">
-                      I consent to photography/videography for promotional purposes *
-                    </Label>
-                  </div>
-
-                  <div className="flex items-center space-x-2">
-                    <Checkbox
-                      id="terms"
-                      checked={formData.termsAccepted}
-                      onCheckedChange={(checked) => handleInputChange("termsAccepted", checked as boolean)}
-                    />
-                    <Label htmlFor="terms" className="text-sm text-gray-700">
-                      I accept the terms and conditions and liability waiver *
-                    </Label>
-                  </div>
-                </div>
-
-                <Button
-                  type="submit"
-                  className="w-full bg-red-600 hover:bg-red-700 text-white border-2 border-red-600 hover:border-red-700 font-bold py-3 text-lg"
-                  disabled={!formData.mediaConsent || !formData.termsAccepted}
+              <Button
+                asChild
+                size="lg"
+                className="w-full bg-red-600 hover:bg-red-700 text-white border-2 border-red-600 hover:border-red-700 font-bold py-4 text-lg"
+              >
+                <a
+                  href="https://forms.gle/cAaTsWKRrXFrt76T8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center"
                 >
-                  Register for EX3
-                </Button>
-              </form>
+                  Register Now - $10
+                  <ExternalLink className="w-5 h-5 ml-2" />
+                </a>
+              </Button>
+
+              <p className="text-sm text-gray-500">
+                You will be redirected to our secure Google Form to complete your registration
+              </p>
+
+              <div className="bg-gray-50 rounded-lg p-4">
+                <h4 className="font-semibold text-gray-800 mb-2">What's Included:</h4>
+                <ul className="text-sm text-gray-600 space-y-1">
+                  <li>• Full day competition experience</li>
+                  <li>• Lunch and refreshments</li>
+                  <li>• Networking opportunities</li>
+                  <li>• Certificate of participation</li>
+                  <li>• Prizes for winners</li>
+                </ul>
+              </div>
             </CardContent>
           </Card>
         </div>
