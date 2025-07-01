@@ -21,7 +21,7 @@ export default function TeamSection() {
         {
           name: "Kishan Suhirthan",
           role: "Operations & Logistics Lead",
-          website: "https://https://www.linkedin.com/in/kishansuhirthan/",
+          website: "https://www.linkedin.com/in/kishansuhirthan/",
           description: "Managing logistics coordination and day-of-event operations",
         },
         {
