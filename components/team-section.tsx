@@ -14,14 +14,15 @@ export default function TeamSection() {
       members: [
         {
           name: "Adil Mukhi",
-          role: "Technology, Operations & Grants Lead",
+          role: "Technology, Venue & Grants Lead",
           website: "https://adilmukhi.vercel.app/",
-          description: "Full-stack developer and operations specialist leading technical infrastructure",
+          description: "Full-stack developer and venue specialist leading technical infrastructure",
         },
         {
           name: "Kishan Suhirthan",
-          role: "Venue & Logistics Lead",
-          description: "Managing venue coordination and day-of-event operations",
+          role: "Operations & Logistics Lead",
+          website: "https://https://www.linkedin.com/in/kishansuhirthan/",
+          description: "Managing logistics coordination and day-of-event operations",
         },
         {
           name: "Velan Mangai Sivakumar",
