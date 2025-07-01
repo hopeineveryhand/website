@@ -32,11 +32,13 @@ export default function TeamSection() {
         {
           name: "Arghya Vyas",
           role: "Technology Coordinator",
+          website: "https://www.linkedin.com/in/arghya-vyas-2a40a72b1/",
           description: "Overseeing technical aspects and ensuring smooth event execution",
         },
         {
           name: "Ali Salman",
           role: "Operations & Outreach Coordinator",
+          website: "https://www.linkedin.com/in/ali-salman-569975294/",
           description: "Coordinating outreach efforts and managing event logistics",
         },
       ],
