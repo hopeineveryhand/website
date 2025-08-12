@@ -9,34 +9,32 @@ const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfa
 export const metadata: Metadata = {
   metadataBase: new URL("https://explore3.vercel.app"),
   title: {
-    default: "EX3 Case Competition 2025 - Toronto's Premier High School Law, Medicine & Science Competition",
+    default: "EX3 Case Competition 2025 - Toronto's Premier High School Medicine, Law & Finance Competition",
     template: "%s | EX3 Case Competition 2025",
   },
   description:
-    "Join EX3 (Explore3), the Greater Toronto Area's most prestigious interdisciplinary case competition for high school students aged 13-18. Compete in Pre-Law, Pre-Medicine, and Pre-STEM tracks with expert judges, networking opportunities, and substantial prizes. Free registration for Summer 2025.",
+    "Join EX3 (Explore3), the Greater Toronto Area's most prestigious interdisciplinary case competition for high school students aged 13-18. Compete in Pre-Medicine, Pre-Law, and Pre-Finance tracks with expert judges, networking opportunities, and substantial prizes. $10 registration for November 2025.",
   keywords: [
     "EX3 case competition",
     "Explore 3",
     "Explore3",
     "Explor3",
     "EX3",
-    "Mississauga case competition",
-    "Mississauga competition",
-    "Explore3 competition",
+    "Toronto case competition",
+    "TMU case competition",
     "Toronto high school competition",
     "GTA student competition",
     "law case competition",
     "medical case competition",
-    "STEM case competition",
+    "finance case competition",
     "high school debate",
     "student networking Toronto",
     "Dr. Interested Medical Club",
     "Youth Law Advocacy",
     "Hope in Every Hand",
-    "Liberation Scientifica",
     "pre-law students",
     "pre-med students",
-    "pre-STEM students",
+    "pre-finance students",
     "academic competition Ontario",
     "student leadership",
     "case study competition",
@@ -49,9 +47,8 @@ export const metadata: Metadata = {
     "student development",
     "professional networking students",
     "Ontario high school events",
-    "Mississauga case competition",
-    "free student competition",
-    "summer 2025 competition",
+    "TMU Ted Rogers School",
+    "November 2025 competition",
     "student judges",
     "academic networking",
     "career exploration",
@@ -63,7 +60,6 @@ export const metadata: Metadata = {
     { name: "Dr. Interested Medical Club", url: "https://drinterested.tech" },
     { name: "Youth Law Advocacy", url: "https://www.instagram.com/theyla.ca/" },
     { name: "Hope in Every Hand", url: "https://www.instagram.com/hope_in_every_hand/" },
-    { name: "Liberation Scientifica", url: "https://libsci.tech/" },
     { name: "Adil Mukhi", url: "https://adilmukhi.vercel.app/" },
   ],
   creator: "EX3 Case Competition Organizing Committee",
@@ -89,13 +85,13 @@ export const metadata: Metadata = {
     siteName: "EX3 Case Competition",
     title: "EX3 Case Competition 2025 - Challenge • Analyze • Solve • Execute",
     description:
-      "The GTA's premier interdisciplinary case competition for high school students. Compete in Law, Medicine, and Science tracks with expert judges, networking, and prizes. Free registration now open for Summer 2025!",
+      "The GTA's premier interdisciplinary case competition for high school students. Compete in Medicine, Law, and Finance tracks with expert judges, networking, and prizes. $10 registration now open for November 2025!",
     images: [
       {
         url: "/images/ex3-logo-caption.png",
         width: 1200,
         height: 630,
-        alt: "EX3 Case Competition - Science | Medicine | Law",
+        alt: "EX3 Case Competition - Medicine | Law | Finance",
         type: "image/png",
       },
       {
@@ -112,7 +108,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EX3 Case Competition 2025 - Toronto's Premier Student Competition",
     description:
-      "Join the GTA's most prestigious case competition for high school students. Three tracks: Law, Medicine, Science. Free registration open!",
+      "Join the GTA's most prestigious case competition for high school students. Three tracks: Medicine, Law, Finance. $10 registration open!",
     images: ["/images/ex3-logo-caption.png"],
     creator: "@ex3competition",
     site: "@ex3competition",
@@ -152,15 +148,16 @@ const jsonLd = {
       name: "EX3 Case Competition 2025",
       description:
         "The Greater Toronto Area's premier interdisciplinary case competition for high school students aged 13-18",
-      startDate: "2025-07-15T09:00:00-04:00",
-      endDate: "2025-07-15T17:00:00-04:00",
+      startDate: "2025-11-22T09:00:00-05:00",
+      endDate: "2025-11-22T16:00:00-05:00",
       eventStatus: "https://schema.org/EventScheduled",
       eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
       location: {
         "@type": "Place",
-        name: "Professional Venue - Toronto Area",
+        name: "TMU Ted Rogers School of Management",
         address: {
           "@type": "PostalAddress",
+          streetAddress: "55 Dundas St W",
           addressLocality: "Toronto",
           addressRegion: "ON",
           addressCountry: "CA",
@@ -182,15 +179,10 @@ const jsonLd = {
           name: "Hope in Every Hand",
           url: "https://www.instagram.com/hope_in_every_hand/",
         },
-        {
-          "@type": "Organization",
-          name: "Liberation Scientifica",
-          url: "https://libsci.tech/",
-        },
       ],
       offers: {
         "@type": "Offer",
-        price: "0",
+        price: "10",
         priceCurrency: "CAD",
         availability: "https://schema.org/InStock",
         validFrom: "2025-01-01",
@@ -201,7 +193,7 @@ const jsonLd = {
         educationalRole: "student",
         audienceType: "high school students aged 13-18",
       },
-      keywords: "case competition, high school, law, medicine, science, Toronto, GTA, academic competition",
+      keywords: "case competition, high school, medicine, law, finance, Toronto, GTA, academic competition",
       image: "https://explore3.vercel.app/images/ex3-logo-caption.png",
     },
     {
@@ -226,7 +218,6 @@ const jsonLd = {
         "https://drinterested.tech",
         "https://www.instagram.com/theyla.ca/",
         "https://www.instagram.com/hope_in_every_hand/",
-        "https://libsci.tech/",
       ],
     },
     {
@@ -261,10 +252,10 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest"></link>
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta name="theme-color" content="#1e3a8a" />
         <meta name="msapplication-TileColor" content="#1e3a8a" />
         <meta name="format-detection" content="telephone=no" />

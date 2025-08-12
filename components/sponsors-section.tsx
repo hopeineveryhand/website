@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Trophy, Award, Medal, Instagram } from "lucide-react"
+import { Trophy, Award, Medal } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -24,41 +24,7 @@ export default function SponsorsSection() {
               <Trophy className="w-8 h-8 text-yellow-600" />
               <h3 className="text-2xl font-bold text-yellow-600">Gold Sponsors</h3>
             </div>
-          </div>
-
-          <div className="flex justify-center">
-            <Card className="border-4 border-yellow-500 shadow-xl hover:shadow-2xl transition-shadow max-w-md">
-              <CardHeader className="text-center">
-                <div className="w-32 h-32 mx-auto mb-4 relative">
-                  <Image
-                    src="/images/go-sponsorly-logo.png"
-                    alt="Go Sponsorly Logo"
-                    fill
-                    className="object-contain rounded-lg shadow-lg"
-                  />
-                </div>
-                <CardTitle className="text-xl text-gray-900">Go Sponsorly</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-gray-700 mb-4">Supporting academic excellence and student innovation</p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white"
-                  asChild
-                >
-                  <a
-                    href="https://www.instagram.com/gosponsorly/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center"
-                  >
-                    <Instagram className="w-4 h-4 mr-2" />
-                    Follow on Instagram
-                  </a>
-                </Button>
-              </CardContent>
-            </Card>
+            <p className="text-gray-600">Coming Soon</p>
           </div>
         </div>
 
@@ -80,16 +46,74 @@ export default function SponsorsSection() {
               <Medal className="w-8 h-8 text-orange-600" />
               <h3 className="text-2xl font-bold text-orange-600">Bronze Sponsors</h3>
             </div>
-            <p className="text-gray-600">Coming Soon</p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            {/* DavidsTea */}
+            <Card className="border-4 border-orange-600 shadow-xl hover:shadow-2xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 relative">
+                  <Image
+                    src="/images/sponsors/davidstea-logo.png"
+                    alt="DavidsTea Logo"
+                    fill
+                    className="object-contain rounded-lg shadow-lg"
+                  />
+                </div>
+                <CardTitle className="text-xl text-gray-900">DavidsTea</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-700 mb-4">Eaton Centre Location</p>
+                <p className="text-sm text-gray-600">Premium tea and beverages supporting student excellence</p>
+              </CardContent>
+            </Card>
+
+            {/* Eva's Original Chimneys */}
+            <Card className="border-4 border-orange-600 shadow-xl hover:shadow-2xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 relative">
+                  <Image
+                    src="/images/sponsors/evas-original-logo.png"
+                    alt="Eva's Original Chimneys Logo"
+                    fill
+                    className="object-contain rounded-lg shadow-lg"
+                  />
+                </div>
+                <CardTitle className="text-xl text-gray-900">Eva's Original Chimneys</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-700 mb-4">454 Bloor St W, Toronto</p>
+                <p className="text-sm text-gray-600">Fresh from Budapest - authentic chimney cakes</p>
+              </CardContent>
+            </Card>
+
+            {/* Sbarro */}
+            <Card className="border-4 border-orange-600 shadow-xl hover:shadow-2xl transition-shadow">
+              <CardHeader className="text-center">
+                <div className="w-32 h-32 mx-auto mb-4 relative">
+                  <Image
+                    src="/images/sponsors/sbarro-logo.png"
+                    alt="Sbarro Logo"
+                    fill
+                    className="object-contain rounded-lg shadow-lg"
+                  />
+                </div>
+                <CardTitle className="text-xl text-gray-900">Sbarro</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-700 mb-4">220 Yonge St, Toronto</p>
+                <p className="text-sm text-gray-600">New York style pizza since 1956</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
 
         {/* CTA Section */}
-        <div className="text-center bg-gradient-to-r from-gray-900 to-gray-800 rounded-xl p-8 border-4 border-yellow-500 shadow-2xl">
-          <h3 className="text-2xl font-bold text-yellow-500 mb-4">Become a Sponsor</h3>
+        <div className="text-center bg-gradient-to-r from-slate-900 to-blue-900 rounded-xl p-8 border-4 border-blue-500 shadow-2xl">
+          <h3 className="text-2xl font-bold text-blue-500 mb-4">Become a Sponsor</h3>
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto leading-relaxed">
-            Join our mission to empower the next generation of leaders in law, medicine, and engineering. Partner with
-            EX3 and make a lasting impact on student education.
+            Join our mission to empower the next generation of leaders in medicine, law, and finance. Partner with EX3
+            and make a lasting impact on student education.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild className="bg-red-600 hover:bg-red-700 text-white font-bold px-8">
@@ -98,7 +122,7 @@ export default function SponsorsSection() {
             <Button
               variant="outline"
               asChild
-              className="border-2 border-yellow-500 text-yellow-500 hover:bg-yellow-500 hover:text-gray-900 font-bold px-8"
+              className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold px-8 bg-transparent"
             >
               <a href="mailto:explorethreecomp@gmail.com">Contact Us</a>
             </Button>

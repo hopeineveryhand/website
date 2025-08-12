@@ -59,23 +59,27 @@ export default function SignupSection() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-center text-gray-700">
-                  <Clock className="w-5 h-5 mr-3 text-yellow-600" />
-                  <span>Full Day Event - Check-in to Awards Ceremony</span>
+                  <Clock className="w-5 h-5 mr-3 text-blue-600" />
+                  <span>November 22, 2025 • 9:00 AM - 4:00 PM</span>
                 </div>
                 <div className="flex items-center text-gray-700">
                   <MapPin className="w-5 h-5 mr-3 text-red-600" />
-                  <span>Professional Venue (Details sent upon registration)</span>
+                  <span>
+                    TMU Ted Rogers School of Management
+                    <br />
+                    55 Dundas St W, Toronto, ON
+                  </span>
                 </div>
                 <div className="flex items-center text-gray-700">
-                  <Trophy className="w-5 h-5 mr-3 text-yellow-600" />
+                  <Trophy className="w-5 h-5 mr-3 text-blue-600" />
                   <span>Prizes, Certificates & Publication Opportunities</span>
                 </div>
               </CardContent>
             </Card>
 
-            <Card className="border-4 border-yellow-500 bg-gray-900 shadow-lg">
+            <Card className="border-4 border-blue-500 bg-slate-900 shadow-lg">
               <CardHeader>
-                <CardTitle className="text-2xl text-yellow-500">What's Included</CardTitle>
+                <CardTitle className="text-2xl text-blue-500">What's Included</CardTitle>
               </CardHeader>
               <CardContent className="space-y-3 text-gray-300">
                 <div className="flex items-center">
@@ -83,7 +87,7 @@ export default function SignupSection() {
                   <span>Competition materials and case studies</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   <span>Lunch and refreshments</span>
                 </div>
                 <div className="flex items-center">
@@ -91,7 +95,7 @@ export default function SignupSection() {
                   <span>Networking opportunities with judges</span>
                 </div>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-yellow-500 rounded-full mr-3"></div>
+                  <div className="w-2 h-2 bg-blue-500 rounded-full mr-3"></div>
                   <span>Certificate of participation</span>
                 </div>
                 <div className="flex items-center">
@@ -135,13 +139,11 @@ export default function SignupSection() {
               </p>
 
               <div className="bg-gray-50 rounded-lg p-4">
-                <h4 className="font-semibold text-gray-800 mb-2">What's Included:</h4>
+                <h4 className="font-semibold text-gray-800 mb-2">Competition Tracks:</h4>
                 <ul className="text-sm text-gray-600 space-y-1">
-                  <li>• Full day competition experience</li>
-                  <li>• Lunch and refreshments</li>
-                  <li>• Networking opportunities</li>
-                  <li>• Certificate of participation</li>
-                  <li>• Prizes for winners</li>
+                  <li>• Pre-Medicine: Medical ethics & healthcare policy</li>
+                  <li>• Pre-Law: Legal analysis & constitutional challenges</li>
+                  <li>• Pre-Finance: Financial analysis & business cases</li>
                 </ul>
               </div>
             </CardContent>

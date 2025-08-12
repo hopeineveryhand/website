@@ -15,17 +15,17 @@ export default function FAQSection() {
     {
       question: "What is EX3 and what does it stand for?",
       answer:
-        "EX3 (Explore3) is the Greater Toronto Area's premier interdisciplinary case competition for high school students. The name represents our three competition tracks: Pre-Law, Pre-Medicine, and Pre-Engineering. It's also an acronym for our methodology: Challenge, Analyze, Solve, Execute.",
+        "EX3 (Explore3) is the Greater Toronto Area's premier interdisciplinary case competition for high school students. The name represents our three competition tracks: Pre-Medicine, Pre-Law, and Pre-Finance. It's also an acronym for our methodology: Challenge, Analyze, Solve, Execute.",
     },
     {
       question: "Who can participate in the competition?",
       answer:
-        "EX3 is open to all high school students aged 13-18 in the Greater Toronto Area. No prior case competition experience is required - we welcome students from all academic backgrounds who are passionate about law, medicine, or engineering.",
+        "EX3 is open to all high school students aged 13-18 in the Greater Toronto Area. No prior case competition experience is required - we welcome students from all academic backgrounds who are passionate about medicine, law, or finance.",
     },
     {
       question: "How does the competition format work?",
       answer:
-        "The competition features three distinct tracks: Pre-Law (legal case analysis), Pre-Medicine (medical ethics and healthcare policy), and Pre-Engineering (engineering innovation challenges). Participants compete in teams, analyze real-world case studies, and present solutions to expert judges.",
+        "The competition features three distinct tracks: Pre-Medicine (medical ethics and healthcare policy), Pre-Law (legal case analysis), and Pre-Finance (financial analysis and business cases). Participants compete in teams, analyze real-world case studies, and present solutions to expert judges.",
     },
     {
       question: "What should I expect on competition day?",
@@ -38,19 +38,19 @@ export default function FAQSection() {
         "Winners receive trophies, medals, certificates of participation, publication opportunities (up to 3 publications valued at $200 each), gift cards, and networking opportunities with industry professionals. All participants receive certificates of participation.",
     },
     {
-      question: "Is there a registration fee?",
+      question: "What is the registration fee?",
       answer:
-        "No! EX3 is completely free to participate in. This includes all competition materials, lunch, refreshments, and networking opportunities. We believe in making academic excellence accessible to all students.",
+        "The registration fee is $10. This includes all competition materials, lunch, refreshments, and networking opportunities. We believe in making academic excellence accessible to all students.",
     },
     {
       question: "How are the partner organizations involved?",
       answer:
-        "EX3 is a collaborative effort between Dr. Interested (medical focus), Youth Law Advocacy (legal focus), Hope in Every Hand (community service), and Liberation Scientifica (engineering focus). Each organization contributes expertise, resources, and mentorship in their respective fields.",
+        "EX3 is a collaborative effort between Dr. Interested (medical focus), Youth Law Advocacy (legal focus), Hope in Every Hand (community service), and Liberation Scientifica (finance focus). Each organization contributes expertise, resources, and mentorship in their respective fields.",
     },
     {
       question: "What kind of cases will we be analyzing?",
       answer:
-        "Cases are designed to be challenging yet accessible, covering real-world scenarios in each track. Pre-Law cases might involve constitutional issues, Pre-Medicine cases could cover healthcare policy dilemmas, and Pre-Engineering cases might focus on technological innovation challenges.",
+        "Cases are designed to be challenging yet accessible, covering real-world scenarios in each track. Pre-Medicine cases might involve healthcare policy dilemmas, Pre-Law cases could cover constitutional issues, and Pre-Finance cases might focus on investment strategies and business analysis.",
     },
     {
       question: "Can I participate if I'm unsure about my career path?",
@@ -83,7 +83,7 @@ export default function FAQSection() {
 
         <div className="max-w-4xl mx-auto space-y-4">
           {faqs.map((faq, index) => (
-            <Card key={index} className="border-2 border-gray-200 hover:border-yellow-500 transition-colors shadow-lg">
+            <Card key={index} className="border-2 border-gray-200 hover:border-blue-500 transition-colors shadow-lg">
               <CardHeader
                 className="cursor-pointer hover:bg-gray-50 transition-colors"
                 onClick={() => toggleItem(index)}
@@ -93,7 +93,7 @@ export default function FAQSection() {
                   {openItems.includes(index) ? (
                     <ChevronUp className="w-5 h-5 text-red-600 flex-shrink-0 ml-4" />
                   ) : (
-                    <ChevronDown className="w-5 h-5 text-yellow-600 flex-shrink-0 ml-4" />
+                    <ChevronDown className="w-5 h-5 text-blue-600 flex-shrink-0 ml-4" />
                   )}
                 </CardTitle>
               </CardHeader>
@@ -107,7 +107,7 @@ export default function FAQSection() {
         </div>
 
         <div className="text-center mt-16">
-          <div className="bg-gradient-to-r from-yellow-500 to-red-600 text-white rounded-lg p-8 max-w-2xl mx-auto shadow-2xl">
+          <div className="bg-gradient-to-r from-blue-500 to-red-600 text-white rounded-lg p-8 max-w-2xl mx-auto shadow-2xl">
             <h3 className="text-xl font-bold mb-2">Still have questions?</h3>
             <p className="mb-4">Our team is here to help! Reach out to us directly.</p>
             <a

@@ -10,8 +10,8 @@ export default function AboutSection() {
             About EX<span className="text-red-600">3</span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            Explore3 brings together high school students passionate about Law, Medicine, and Engineering in the GTA's
-            most prestigious annual case competition.
+            Explore3 brings together high school students passionate about Medicine, Law, and Finance in the GTA's most
+            prestigious annual case competition.
           </p>
         </div>
 
@@ -23,7 +23,7 @@ export default function AboutSection() {
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 text-center">
-                Three competitive tracks: Pre-Law, Pre-Med, and Pre-Engineering with prizes and recognition.
+                Three competitive tracks: Pre-Medicine, Pre-Law, and Pre-Finance with prizes and recognition.
               </p>
             </CardContent>
           </Card>
@@ -55,19 +55,25 @@ export default function AboutSection() {
           <Card className="border-4 border-gray-900 shadow-lg hover:shadow-xl transition-shadow">
             <CardHeader className="text-center">
               <MapPin className="w-12 h-12 text-blue-600 mx-auto mb-2" />
-              <CardTitle className="text-gray-900">Prestigious Venue</CardTitle>
+              <CardTitle className="text-gray-900">TMU Venue</CardTitle>
             </CardHeader>
             <CardContent>
               <p className="text-gray-700 text-center">
-                Professional setting with auditorium-style presentation and networking spaces.
+                Professional setting at TMU Ted Rogers School of Management in downtown Toronto.
               </p>
             </CardContent>
           </Card>
         </div>
 
-        <div className="bg-gray-900 border-4 border-blue-600 rounded-lg p-8 shadow-2xl">
+        <div className="bg-slate-900 border-4 border-blue-600 rounded-lg p-8 shadow-2xl">
           <h3 className="text-2xl font-bold text-blue-500 mb-6 text-center">Competition Tracks</h3>
           <div className="grid md:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-MEDICINE</div>
+              <p className="text-gray-300 leading-relaxed">
+                Medical ethics, healthcare policy, and clinical decision-making scenarios.
+              </p>
+            </div>
             <div className="text-center">
               <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-LAW</div>
               <p className="text-gray-300 leading-relaxed">
@@ -75,17 +81,9 @@ export default function AboutSection() {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-MED</div>
+              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">PRE-FINANCE</div>
               <p className="text-gray-300 leading-relaxed">
-                Medical ethics, healthcare policy, and clinical decision-making scenarios.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-blue-600 text-white font-bold py-3 px-6 rounded-lg mb-4 shadow-lg">
-                PRE-ENGINEERING
-              </div>
-              <p className="text-gray-300 leading-relaxed">
-                Engineering innovation, technical solutions, and design challenges.
+                Financial analysis, investment strategies, and business case studies.
               </p>
             </div>
           </div>
