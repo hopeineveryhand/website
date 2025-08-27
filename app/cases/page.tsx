@@ -231,6 +231,158 @@ export default function CasesPage() {
             </div>
           </section>
 
+          {/* Finance Track Section */}
+          <section className="mb-12">
+            <div className="flex items-center gap-3 mb-6">
+              <h2 className="text-2xl font-semibold">Finance Track</h2>
+              <Badge variant="secondary">1 Case</Badge>
+            </div>
+
+            <Card className="border-l-4 border-l-green-600">
+              <CardHeader>
+                <div className="flex items-start justify-between">
+                  <div>
+                    <CardTitle className="text-xl mb-2">Rising Beans Coffee Co.</CardTitle>
+                    <CardDescription>Strategic Financial Planning & Investment Analysis Case</CardDescription>
+                  </div>
+                  <Badge variant="outline">Finance</Badge>
+                </div>
+              </CardHeader>
+              <CardContent className="space-y-4">
+                <div>
+                  <h4 className="font-semibold mb-2">Background:</h4>
+                  <p className="text-sm leading-relaxed mb-3">
+                    Rising Beans Coffee Co. is a mid-sized Canadian coffee chain with 40 stores around Quebec and
+                    Ontario. The company has built a strong reputation for ethical sourcing and community involvement,
+                    but now it faces growing competition from bigger chains such as Tim Hortons, Starbucks, and other
+                    independent cafes.
+                  </p>
+
+                  <div className="bg-muted p-4 rounded-lg">
+                    <h5 className="font-medium mb-2">2024 Financial Performance:</h5>
+                    <div className="grid grid-cols-2 gap-4 text-sm">
+                      <div>
+                        <span className="font-medium">Revenue:</span> $12 Million
+                      </div>
+                      <div>
+                        <span className="font-medium">Net Profit Margin:</span> 8%
+                      </div>
+                      <div>
+                        <span className="font-medium">Cash on Hand:</span> $1.2 Million
+                      </div>
+                      <div>
+                        <span className="font-medium">Debt-to-Equity Ratio:</span> 0.5
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <Separator />
+
+                <div>
+                  <h4 className="font-semibold mb-2">Issue:</h4>
+                  <p className="text-sm leading-relaxed mb-3">
+                    Rising Beans Management wants to expand but is unsure which strategy is financially viable. They
+                    have narrowed down to 3 options and can only pursue one. The business can receive a bank loan at 6%
+                    interest if needed. Investors want to see a payback period of 3-4 years and steady profitability.
+                  </p>
+
+                  <div className="space-y-4">
+                    <div className="bg-blue-50 dark:bg-blue-950/20 p-4 rounded-lg">
+                      <h5 className="font-medium mb-2">Option 1: New Stores</h5>
+                      <ul className="text-sm space-y-1 list-disc list-inside">
+                        <li>Open 10 new locations throughout 2 years</li>
+                        <li>Cost per store: $300,000</li>
+                        <li>Expected annual revenue per store: $500,000 with 10% net profit margin</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-purple-50 dark:bg-purple-950/20 p-4 rounded-lg">
+                      <h5 className="font-medium mb-2">Option 2: Digital Expansion</h5>
+                      <ul className="text-sm space-y-1 list-disc list-inside">
+                        <li>Invest in a mobile ordering and delivery app</li>
+                        <li>One time cost: $1 million</li>
+                        <li>Expected to increase existing stores' sales by 12% per year</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-orange-50 dark:bg-orange-950/20 p-4 rounded-lg">
+                      <h5 className="font-medium mb-2">Option 3: Wholesale Coffee Products</h5>
+                      <ul className="text-sm space-y-1 list-disc list-inside">
+                        <li>Launch a line of packaged coffee beans for grocery stores</li>
+                        <li>Startup cost: $800,000</li>
+                        <li>Expected 1st year revenue: $2 million, with 15% net profit margin</li>
+                        <li>Annual Growth: 8%</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <Separator />
+
+                <div>
+                  <h4 className="font-semibold mb-2">Assignment:</h4>
+                  <p className="text-sm leading-relaxed mb-3">
+                    As a team of financial consultants, think about what option would be the best for the company.
+                    Present in a 3-5 minute oral presentation with your thinking as to which option should Rising Beans
+                    proceed with and why. Good Luck!
+                  </p>
+
+                  <div className="bg-green-50 dark:bg-green-950/20 p-4 rounded-lg">
+                    <h5 className="font-medium mb-2">Key Analysis Areas:</h5>
+                    <ul className="text-sm space-y-1 list-disc list-inside">
+                      <li>Financial impact (Return on Investment, profitability, payback period)</li>
+                      <li>Risks assessment</li>
+                      <li>Qualitative factors (competitors, brand image)</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <Separator />
+
+                <div>
+                  <h4 className="font-semibold mb-2">Evaluation Criteria (30 marks total):</h4>
+                  <div className="space-y-4 text-sm">
+                    <div className="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <h5 className="font-medium">Financial Analysis (0-5 marks)</h5>
+                        <p className="text-muted-foreground">
+                          Accurate calculations, clear financial reasoning, multiple metrics compared effectively
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium">Strategic Evaluation (0-5 marks)</h5>
+                        <p className="text-muted-foreground">
+                          Comprehensive evaluation integrating market trends, brand, and long-term sustainability
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium">Recommendation & Justification (0-5 marks)</h5>
+                        <p className="text-muted-foreground">
+                          Strong, persuasive recommendation fully supported by quantitative + qualitative analysis
+                        </p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium">Presentation Skills (0-5 marks)</h5>
+                        <p className="text-muted-foreground">Excellent delivery; professional, engaging, polished</p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium">Teamwork & Organization (0-5 marks)</h5>
+                        <p className="text-muted-foreground">Seamless teamwork; highly professional transitions</p>
+                      </div>
+                      <div>
+                        <h5 className="font-medium">Creativity & Professionalism (0-5 marks)</h5>
+                        <p className="text-muted-foreground">
+                          Creative, polished, professional visuals; innovative approach
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
           {/* Medicine Track Section */}
           <section>
             <div className="flex items-center gap-3 mb-6">
