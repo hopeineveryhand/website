@@ -28,6 +28,9 @@ export default function Header() {
             <Link href="/#about" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               About
             </Link>
+            <Link href="/cases" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
+              Cases
+            </Link>
             <Link href="/gallery" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               Gallery
             </Link>
@@ -68,6 +71,13 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/cases"
+                className="text-blue-600 hover:text-red-600 font-semibold transition-colors"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Cases
               </Link>
               <Link
                 href="/gallery"
