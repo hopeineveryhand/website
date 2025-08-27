@@ -20,7 +20,7 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Navigation  */}
           <nav className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-blue-600 hover:text-red-600 font-semibold transition-colors">
               Home
