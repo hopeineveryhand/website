@@ -1,130 +1,83 @@
-import Image from "next/image"
-import { Button } from "@/components/ui/button"
-import Link from "next/link"
-import { Calendar, MapPin } from "lucide-react"
+"use client"
 
-export default function HeroSection() {
+import { Button } from "@/components/ui/button"
+import { ArrowRight, Heart, Users, Globe } from "lucide-react"
+import Link from "next/link"
+import Image from "next/image"
+
+export function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 py-16 lg:py-24 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fillRule='evenodd'%3E%3Cg fill='%23dc2626' fillOpacity='0.1'%3E%3Crect width='11' height='11'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}
-        ></div>
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* Background with subtle pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20" />
+
+      {/* Animated hand silhouette */}
+      <div className="absolute inset-0 flex items-center justify-center opacity-10">
+        <div className="w-96 h-96 relative animate-float">
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/30 to-accent/30 rounded-full blur-3xl" />
+        </div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div className="text-center lg:text-left">
-            {/* Main Title */}
-            <h1 className="text-5xl lg:text-6xl font-bold mb-6 tracking-wider">
-              <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 bg-clip-text text-transparent">
-                EX
-              </span>
-              <span className="text-red-500 drop-shadow-lg">3</span>
-            </h1>
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="mb-8">
+          <Image
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/HIEH%20Logo-rr4VVJHW7CuqaWCAzfJ5xvf7HZc01t.png"
+            alt="Hope in Every Hand Logo"
+            width={120}
+            height={120}
+            className="mx-auto mb-6 animate-pulse-glow"
+          />
+        </div>
 
-            {/* Subtitle */}
-            <h2 className="text-2xl lg:text-3xl font-bold text-white mb-4 leading-tight">
-              The GTA's Premier
-              <br />
-              <span className="bg-gradient-to-r from-blue-400 to-red-500 bg-clip-text text-transparent">
-                Case Competition
-              </span>
-            </h2>
+        <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 text-balance">
+          Every hand holds the power to{" "}
+          <span className="text-primary bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            make a difference
+          </span>
+        </h1>
 
-            {/* Description */}
-            <p className="text-lg text-gray-300 mb-6 leading-relaxed max-w-2xl">
-              Where high school visionaries compete in interdisciplinary challenges across Medicine, Law, and Finance.
-              Join 100+ students for a day of intellectual excellence and professional networking.{" "}
-              <span className="font-semibold text-blue-400">Registration: $10</span>
-            </p>
+        <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
+          Meet the passionate team behind Hope in Every Hand — dedicated to spreading kindness, hope, and meaningful
+          impact. Let's build hope, together! 🧡
+        </p>
 
-            {/* Action Words */}
-            <div className="flex flex-wrap justify-center lg:justify-start gap-4 mb-8">
-              {["Challenge", "Analyze", "Solve", "Execute"].map((word, index) => (
-                <div key={word} className="flex items-center">
-                  <div className="w-2 h-2 bg-gradient-to-r from-blue-500 to-red-600 rounded-full mr-2"></div>
-                  <span className="text-blue-400 font-semibold text-lg tracking-wide">{word}</span>
-                </div>
-              ))}
-            </div>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <Button
+            asChild
+            size="lg"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 text-lg px-8 py-6"
+          >
+            <Link href="/about" className="flex items-center gap-2">
+              Learn Our Story
+              <ArrowRight className="h-5 w-5" />
+            </Link>
+          </Button>
+          <Button
+            asChild
+            variant="outline"
+            size="lg"
+            className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground bg-transparent"
+          >
+            <Link href="/contact">Get Involved</Link>
+          </Button>
+        </div>
 
-            {/* Quick Stats */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-blue-500">3</div>
-                <div className="text-gray-400 text-sm">Tracks</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-blue-600">100+</div>
-                <div className="text-gray-400 text-sm">Students</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-blue-500">4</div>
-                <div className="text-gray-400 text-sm">Partners</div>
-              </div>
-              <div className="text-center lg:text-left">
-                <div className="text-2xl font-bold text-red-600">1</div>
-                <div className="text-gray-400 text-sm">Day</div>
-              </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="space-y-4 sm:space-y-0 sm:space-x-4 sm:flex">
-              <Button
-                asChild
-                size="lg"
-                className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white border-2 border-red-600 hover:border-red-700 font-bold px-8 py-4 text-lg w-full sm:w-auto shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
-              >
-                <a href="https://forms.gle/cAaTsWKRrXFrt76T8" target="_blank" rel="noopener noreferrer">
-                  Register Now - $10
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white font-bold px-8 py-4 text-lg w-full sm:w-auto shadow-lg hover:shadow-xl transition-all duration-300 bg-transparent"
-              >
-                <Link href="#about">Learn More</Link>
-              </Button>
-            </div>
+        {/* Impact stats */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          <div className="text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
+            <Heart className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 className="text-2xl font-bold text-foreground mb-2">Our Mission</h3>
+            <p className="text-muted-foreground">Spreading kindness and hope through meaningful action</p>
           </div>
-
-          {/* Right Side - Logo and Info Cards */}
-          <div className="flex flex-col items-center space-y-6">
-            {/* Main Logo Display */}
-            <div className="relative group">
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-red-600 transform rotate-3 rounded-lg opacity-20 group-hover:opacity-30 transition-opacity"></div>
-              <div className="relative bg-gray-800 border-4 border-blue-500 rounded-lg p-6 shadow-2xl group-hover:shadow-blue-500/20 transition-all duration-300">
-                <Image
-                  src="/images/ex3-logo-caption.png"
-                  alt="EX3 - Medicine | Law | Finance"
-                  width={400}
-                  height={300}
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
-
-            {/* Info Cards */}
-            <div className="grid grid-cols-2 gap-4 w-full max-w-md">
-              <div className="bg-gray-800/80 border-2 border-blue-500/50 rounded-lg p-4 text-center backdrop-blur-sm">
-                <Calendar className="w-6 h-6 text-blue-500 mx-auto mb-2" />
-                <div className="text-white font-semibold text-sm">Nov 22, 2025</div>
-                <div className="text-gray-400 text-xs">9AM - 4PM</div>
-              </div>
-              <div className="bg-gray-800/80 border-2 border-red-600/50 rounded-lg p-4 text-center backdrop-blur-sm">
-                <MapPin className="w-6 h-6 text-red-600 mx-auto mb-2" />
-                <div className="text-white font-semibold text-sm">TMU Ted Rogers</div>
-                <div className="text-gray-400 text-xs">55 Dundas St W</div>
-              </div>
-            </div>
+          <div className="text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
+            <Users className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 className="text-2xl font-bold text-foreground mb-2">Community</h3>
+            <p className="text-muted-foreground">Building connections that create lasting impact</p>
+          </div>
+          <div className="text-center p-6 rounded-lg bg-card/50 backdrop-blur-sm border border-border">
+            <Globe className="h-12 w-12 text-primary mx-auto mb-4" />
+            <h3 className="text-2xl font-bold text-foreground mb-2">Global Reach</h3>
+            <p className="text-muted-foreground">One project at a time toward a sustainable future</p>
           </div>
         </div>
       </div>

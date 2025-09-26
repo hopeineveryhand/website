@@ -1,113 +1,81 @@
 import Link from "next/link"
-import { ExternalLink } from "lucide-react"
+import { Heart, Instagram, Mail, ExternalLink } from "lucide-react"
 
-export default function Footer() {
+export function Footer() {
   return (
-    <footer className="bg-slate-900 border-t-4 border-blue-500 py-16">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-4 gap-8 mb-12">
-          <div className="md:col-span-2">
-            <h3 className="text-3xl font-bold text-blue-500 mb-4 font-playfair">
-              EX<span className="text-red-600">3</span>
-            </h3>
-            <p className="text-gray-300 mb-6 leading-relaxed text-lg">
-              The Greater Toronto Area's premier interdisciplinary case competition, bringing together the brightest
-              high school minds to tackle real-world challenges in Medicine, Law, and Finance.
-            </p>
-            <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              A collaborative initiative proudly organized by Dr. Interested Medical Club, Youth Law Advocacy, Hope in
-              Every Hand, and Liberation Scientifica - representing the future of interdisciplinary education.
-            </p>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold text-blue-500 mb-6">Competition</h4>
-            <div className="space-y-3">
-              <Link href="#about" className="block text-gray-300 hover:text-red-600 transition-colors">
-                About EX3
-              </Link>
-              <Link href="#team" className="block text-gray-300 hover:text-red-600 transition-colors">
-                Organizing Team
-              </Link>
-              <Link href="#signup" className="block text-gray-300 hover:text-red-600 transition-colors">
-                Register Now
-              </Link>
-              <Link href="#faq" className="block text-gray-300 hover:text-red-600 transition-colors">
-                FAQ
-              </Link>
-              <Link
-                href="mailto:explorethreecomp@gmail.com"
-                className="block text-gray-300 hover:text-red-600 transition-colors"
-              >
-                Contact Us
-              </Link>
+    <footer className="bg-card border-t border-border">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center space-x-2 mb-4">
+              <Heart className="h-8 w-8 text-primary" />
+              <span className="font-serif text-xl font-bold text-foreground">Hope in Every Hand</span>
             </div>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-bold text-blue-500 mb-6">Partner Organizations</h4>
-            <div className="space-y-3">
-              <a
-                href="https://drinterested.tech/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-300 hover:text-red-600 transition-colors group"
-              >
-                Dr. Interested
-                <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a
-                href="https://www.instagram.com/theyla.ca/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-gray-300 hover:text-red-600 transition-colors group"
-              >
-                Youth Law Advocacy
-                <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
-              <a
+            <p className="text-muted-foreground mb-4 max-w-md text-pretty">
+              Every hand has the power to spark change. Together, we're turning ideas into action through events,
+              fundraisers, and donations that make a meaningful difference.
+            </p>
+            <div className="flex space-x-4">
+              <Link
                 href="https://www.instagram.com/hope_in_every_hand/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-gray-300 hover:text-red-600 transition-colors group"
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
-                Hope in Every Hand
-                <ExternalLink className="w-3 h-3 ml-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+                <Instagram className="h-6 w-6" />
+              </Link>
+              <Link
+                href="https://linktr.ee/HopeInEveryHand"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground hover:text-primary transition-colors"
+              >
+                <ExternalLink className="h-6 w-6" />
+              </Link>
+              <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                <Mail className="h-6 w-6" />
+              </Link>
             </div>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-foreground mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/about" className="text-muted-foreground hover:text-primary transition-colors">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link href="/members" className="text-muted-foreground hover:text-primary transition-colors">
+                  Our Team
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+                  Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/donate" className="text-muted-foreground hover:text-primary transition-colors">
+                  Donate
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-semibold text-foreground mb-4">Get Involved</h3>
+            <ul className="space-y-2">
+              <li className="text-muted-foreground">1️⃣ Plan an event or fundraiser</li>
+              <li className="text-muted-foreground">2️⃣ Host with heart and purpose</li>
+              <li className="text-muted-foreground">3️⃣ Donate to a cause that matters</li>
+            </ul>
           </div>
         </div>
 
-        <div className="border-t border-blue-500 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-center md:text-left">
-              <p className="text-gray-400">
-                © 2025 EX3 Case Competition. All rights reserved. |
-                <span className="text-blue-500"> Challenge • Analyze • Solve • Execute</span>
-              </p>
-              <p className="text-gray-500 text-sm mt-1">
-                Organized by Dr. Interested, Youth Law Advocacy & Hope in Every Hand
-              </p>
-            </div>
-            <div className="flex space-x-6 text-sm">
-              <a
-                href="https://drinterested.tech/privacy-policy"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-400 transition-colors"
-              >
-                Privacy Policy
-              </a>
-              <a
-                href="https://drinterested.tech/terms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-500 hover:text-gray-400 transition-colors"
-              >
-                Terms of Service
-              </a>
-            </div>
-          </div>
+        <div className="border-t border-border mt-8 pt-8 text-center">
+          <p className="text-muted-foreground">© 2025 Hope in Every Hand. Made with ❤️ for a better world.</p>
         </div>
       </div>
     </footer>
