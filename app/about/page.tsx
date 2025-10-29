@@ -87,7 +87,7 @@ export default function AboutPage() {
                 <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary">3️⃣</span>
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-2">Donate & Support</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-2">Support Our Mission</h3>
                 <p className="text-muted-foreground">Contribute to causes that matter and make a direct difference</p>
               </div>
             </div>

@@ -56,11 +56,6 @@ export function Footer() {
                   Contact
                 </Link>
               </li>
-              <li>
-                <Link href="/donate" className="text-muted-foreground hover:text-primary transition-colors">
-                  Donate
-                </Link>
-              </li>
             </ul>
           </div>
 
@@ -69,7 +64,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-muted-foreground">1️⃣ Plan an event or fundraiser</li>
               <li className="text-muted-foreground">2️⃣ Host with heart and purpose</li>
-              <li className="text-muted-foreground">3️⃣ Donate to a cause that matters</li>
+              <li className="text-muted-foreground">3️⃣ Support our mission</li>
             </ul>
           </div>
         </div>

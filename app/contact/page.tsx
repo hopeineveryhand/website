@@ -2,9 +2,6 @@ import { Navigation } from "@/components/navigation"
 import { Footer } from "@/components/footer"
 import { ParticleBackground } from "@/components/particle-background"
 import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
 import { Mail, Instagram, ExternalLink } from "lucide-react"
 import type { Metadata } from "next"
 
@@ -27,8 +24,8 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-muted-foreground text-pretty leading-relaxed max-w-3xl mx-auto">
-              Ready to make a difference? We'd love to hear from you. Whether you want to volunteer, donate, or simply
-              learn more about our mission, let's connect!
+              Ready to make a difference? We'd love to hear from you. Whether you want to volunteer, donate, or learn
+              more about our mission, let's connect!
             </p>
           </div>
 
@@ -37,72 +34,37 @@ export default function ContactPage() {
             <Card className="bg-card/50 backdrop-blur-sm border-border">
               <CardContent className="p-8">
                 <h2 className="font-serif text-2xl font-bold text-foreground mb-6">Send us a Message</h2>
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
-                        First Name
-                      </label>
-                      <Input
-                        id="firstName"
-                        type="text"
-                        placeholder="Your first name"
-                        className="bg-input border-border text-foreground"
-                      />
-                    </div>
-                    <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-foreground mb-2">
-                        Last Name
-                      </label>
-                      <Input
-                        id="lastName"
-                        type="text"
-                        placeholder="Your last name"
-                        className="bg-input border-border text-foreground"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                      Email Address
-                    </label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="your.email@example.com"
-                      className="bg-input border-border text-foreground"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-foreground mb-2">
-                      Subject
-                    </label>
-                    <Input
-                      id="subject"
-                      type="text"
-                      placeholder="How can we help you?"
-                      className="bg-input border-border text-foreground"
-                    />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      rows={6}
-                      placeholder="Tell us about your interest in Hope in Every Hand..."
-                      className="bg-input border-border text-foreground resize-none"
-                    />
-                  </div>
-
-                  <Button type="submit" className="w-full bg-primary text-primary-foreground hover:bg-primary/90">
-                    Send Message
-                  </Button>
-                </form>
+                <p className="text-muted-foreground mb-6 leading-relaxed">
+                  Have questions or want to get involved? Email us at{" "}
+                  <a
+                    href="mailto:hopeineveryhand2704@gmail.com"
+                    className="text-primary hover:text-primary/80 transition-colors font-semibold"
+                  >
+                    hopeineveryhand2704@gmail.com
+                  </a>{" "}
+                  and we'll get back to you as soon as possible!
+                </p>
+                <div className="bg-primary/10 rounded-lg p-6 border border-primary/20">
+                  <p className="text-foreground font-semibold mb-2">We'd love to hear about:</p>
+                  <ul className="space-y-2 text-muted-foreground">
+                    <li className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Volunteering opportunities</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Partnership inquiries</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>Event collaborations</span>
+                    </li>
+                    <li className="flex items-center space-x-2">
+                      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
+                      <span>General questions</span>
+                    </li>
+                  </ul>
+                </div>
               </CardContent>
             </Card>
 
@@ -116,7 +78,12 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground">Email</h3>
-                        <p className="text-muted-foreground">info@hopeineveryhand.org</p>
+                        <a
+                          href="mailto:hopeineveryhand2704@gmail.com"
+                          className="text-primary hover:text-primary/80 transition-colors"
+                        >
+                          hopeineveryhand2704@gmail.com
+                        </a>
                       </div>
                     </div>
 
@@ -167,7 +134,7 @@ export default function ContactPage() {
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
-                      <span className="text-muted-foreground">Donate to our cause</span>
+                      <span className="text-muted-foreground">Support our cause</span>
                     </div>
                     <div className="flex items-center space-x-3">
                       <div className="w-2 h-2 bg-primary rounded-full"></div>
@@ -180,14 +147,6 @@ export default function ContactPage() {
                   </div>
                 </CardContent>
               </Card>
-
-              <div className="text-center bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-6 border border-primary/20">
-                <h3 className="font-serif text-xl font-bold text-foreground mb-2">Ready to Make a Difference?</h3>
-                <p className="text-muted-foreground mb-4">Every action matters, no matter how big or small.</p>
-                <Button asChild className="bg-primary text-primary-foreground hover:bg-primary/90">
-                  <a href="/donate">Donate Now</a>
-                </Button>
-              </div>
             </div>
           </div>
         </div>
