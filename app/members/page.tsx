@@ -29,7 +29,7 @@ export default function MembersPage() {
           role: "Web Developer",
           image: "/team/Headshot - Adil Mukhi.PNG",
         },
-        { name: "Jenny Hua", role: "Web Developer", image: "/team/Headshot - Jenny H.png" },
+        { name: "Jenny Hua", role: "Web Developer", image: "/favicon.ico" },
       ],
     },
     {
@@ -39,15 +39,15 @@ export default function MembersPage() {
     {
       title: "Operations",
       members: [
-        { name: "Rhea Addepalli", role: "Director", image: "/team/Headshot - Rhea A. PNG" },
-        { name: "Vivian Xue", role: "Coordinator", image: "/team/Headshot - Vivian" },
+        { name: "Rhea Addepalli", role: "Director", image: "/team/Headshot - Riva.jpg" },
+        { name: "Vivian Xue", role: "Coordinator", image: "/team/Headshot - Vivian.jpg" },
         { name: "Jojy Thevara", role: "Coordinator", image: "/team/Headshot - Jojy Thevara.jpg" },
       ],
     },
     {
       title: "Public Relations",
       members: [
-        { name: "Riva Siroya", role: "Director", image: "/team/Headshot - Riva" },
+        { name: "Riva Siroya", role: "Director", image: "/team/Headshot - Riva.jpg" },
         { name: "James Zhou", role: "Coordinator", image: "/team/Headshot - James Zhou.png" },
         { name: "Mihika Paul", role: "Coordinator", image: "/team/headshot mihika.jpg" },
         { name: "Aanya Juneja", role: "Coordinator", image: "/team/IMG-20250822-Aanya Juneja.jpg" },
