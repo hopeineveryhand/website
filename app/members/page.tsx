@@ -39,7 +39,7 @@ export default function MembersPage() {
     {
       title: "Operations",
       members: [
-        { name: "Rhea Addepalli", role: "Director", image: "/team/Headshot - Riva.jpg" },
+        { name: "Rhea Addepalli", role: "Director", image: "/team/Headshot - Rhea A.PNG" },
         { name: "Vivian Xue", role: "Coordinator", image: "/team/Headshot - Vivian.jpg" },
         { name: "Jojy Thevara", role: "Coordinator", image: "/team/Headshot - Jojy Thevara.jpg" },
       ],
