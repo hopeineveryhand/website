@@ -9,7 +9,7 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
       {/* Background with subtle pattern */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20" />
+      <div className="absolute inset-0" />
 
       {/* Animated hand silhouette */}
       <div className="absolute inset-0 flex items-center justify-center opacity-10">
@@ -38,7 +38,7 @@ export function HeroSection() {
 
         <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto text-pretty leading-relaxed">
           Meet the passionate team behind Hope in Every Hand — dedicated to spreading kindness, hope, and meaningful
-          impact. Let's build hope, together! 🧡
+          impact. Let's build hope, together! &#128153;
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
@@ -79,6 +79,8 @@ export function HeroSection() {
             <h3 className="text-2xl font-bold text-foreground mb-2">Global Reach</h3>
             <p className="text-muted-foreground">One project at a time toward a sustainable future</p>
           </div>
+          <br/>
+          <br/>
         </div>
       </div>
     </section>

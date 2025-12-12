@@ -70,7 +70,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center">
-          <p className="text-muted-foreground">© 2025 Hope in Every Hand. Made with ❤️ for a better world.</p>
+          <p className="text-muted-foreground">© 2025 Hope in Every Hand. Made with &#x2764;&#xFE0F; for a better world.</p>
         </div>
       </div>
     </footer>

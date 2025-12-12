@@ -49,7 +49,7 @@ export function ParticleBackground() {
   }, [])
 
   return (
-    <div className="fixed inset-0 pointer-events-none overflow-hidden">
+    <div className="fixed inset-0 overflow-hidden">
       {particles.map((particle) => (
         <div
           key={particle.id}
